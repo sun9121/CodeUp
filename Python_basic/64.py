@@ -9,3 +9,4 @@
 # 이건 3항연산을 사용하지 않은 방법 ㅠㅜ
 
 a,b,c = map(int, input().split())
+print((a if(a<b) else b) if (a if(a<b) else b)<c else c)
