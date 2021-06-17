@@ -2,3 +2,6 @@
 
 n = int(input())
 
+for _ in range(n):
+    n -= 1
+    print(n)
