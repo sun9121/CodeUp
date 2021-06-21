@@ -29,4 +29,4 @@ for i in range(n):
 for i in range(19):
     for j in range(19):
         print(baduk[i][j], end=' ')
-    print()        
+    print()
