@@ -12,7 +12,7 @@ move = [[0,-1], [1,0], [0,1], [-1,0]] # d에 맞는 전진 이동 방향
 move_count = 1 # 방문 칸 수. 처음 칸을 포함해 1로 시작
 board[x][y] = 2 # 가본 칸을 2로 만든다.
 
-for _ in range(20):
+while True:
     if count == 4: # 회전을 4번 했다면 뒤로 가야하므로 -를 해준다
         dx = x-move[d][0]
         dy = x-move[d][1]
