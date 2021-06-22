@@ -6,7 +6,7 @@ x, y, d = map(int, input().split()) #캐릭터의 위치 x,y 바라보는 방향
 board = []
 for _ in range(m):
     board.append(list(map(int, input().split())))
-count = 0
+count = 0 # 돌아간 횟수 설정
 move = [[0,-1], [1,0], [0,1], [-1,0]] # d에 맞는 전진 이동 방향
 
 move_count = 1 # 방문 칸 수. 처음 칸을 포함해 1로 시작
