@@ -11,7 +11,7 @@ for _ in range(e):
     lines.append((cost,a,b))
 
 lines.sort()
-biggest = 0
+last = 0
 
 def find_parent(parent, x):
     if parent[x] != x:
@@ -33,6 +33,6 @@ for line in lines:
     if find_parent(parent, a) != find_parent(parent, b):
         union_parent(parent, a, b)
         result += cost
-        biggest += cost
+        last = cost
 
-print(result - biggest)
+print(result - last)
